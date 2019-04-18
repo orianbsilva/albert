@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1.3)
 
 project(globalshortcut)
 
-find_package(Qt5 5.5.0 REQUIRED COMPONENTS Gui)
+find_package(Qt5 5.12.0 REQUIRED COMPONENTS Gui)
 
 set(SRC
     include/globalshortcut/globalshortcut_globals.h
@@ -13,7 +13,7 @@ set(SRC
 set(LIB Qt5::Gui)
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
-    find_package(Qt5 5.5.0 REQUIRED X11Extras)
+    find_package(Qt5 5.12.0 REQUIRED X11Extras)
     set(SRC ${SRC} src/hotkeymanager_x11.cpp)
     set(LIB ${LIB} Qt5::X11Extras X11)
 elseif(${CMAKE_SYSTEM_NAME} MATCHES "Windows")

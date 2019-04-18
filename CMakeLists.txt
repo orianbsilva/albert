@@ -66,7 +66,7 @@ target_include_directories(${TARGET_NAME_LIB}
         src/lib
 )
 
-find_package(Qt5 5.5.0
+find_package(Qt5 5.12.0
     COMPONENTS
         Gui
         Sql
@@ -82,7 +82,7 @@ target_link_libraries(${TARGET_NAME_LIB}
 
 option(BUILD_WITH_QTCHARTS "Use QtCharts to plot stats." ON)
 
-find_package(Qt5 5.5.0
+find_package(Qt5 5.12.0
     COMPONENTS
         Concurrent
         Network

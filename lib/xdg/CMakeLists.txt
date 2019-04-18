@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1.3)
 
 project(xdg)
 
-find_package(Qt5 5.5.0 REQUIRED COMPONENTS Gui)
+find_package(Qt5 5.12.0 REQUIRED COMPONENTS Gui)
 
 file(GLOB SRC src/* include/xdg/*)
 
